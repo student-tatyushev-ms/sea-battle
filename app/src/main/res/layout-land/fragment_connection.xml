@@ -1,0 +1,40 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sea_battle.fragment.ConnectionFragment"
+    >
+
+    <Button
+        android:id="@+id/insecure_connect_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/insecure_connect"
+        />
+
+    <Button
+        android:id="@+id/discoverable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/insecure_connect_scan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/discoverable"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/insecure_connect_scan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/sea_battle"
+        android:textColor="#1a88d7"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        />
+
+</RelativeLayout>

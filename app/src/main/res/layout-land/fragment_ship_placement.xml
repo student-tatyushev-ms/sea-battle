@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ship_placement"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sea_battle.fragment.ShipPlacementFragment"
+    >
+
+    <com.sea_battle.view.ShipPlacementView
+        android:id="@+id/field"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        />
+
+    <com.sea_battle.view.CellLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@+id/field"
+        android:layout_toRightOf="@+id/field"
+        app:columns="5"
+        app:spacing="1dp"
+        >
+
+        <ImageButton
+            android:id="@+id/up"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_up"
+            app:layout_cellsHeight="1"
+            app:layout_cellsWidth="1"
+            app:layout_left="2"
+            app:layout_top="1"
+            />
+
+        <ImageButton
+            android:id="@+id/right"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_right"
+            app:layout_cellsHeight="1"
+            app:layout_cellsWidth="1"
+            app:layout_left="3"
+            app:layout_top="2"
+            />
+
+        <ImageButton
+            android:id="@+id/down"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_down"
+            app:layout_cellsHeight="1"
+            app:layout_cellsWidth="1"
+            app:layout_left="2"
+            app:layout_top="3"
+            />
+
+        <ImageButton
+            android:id="@+id/left"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_left"
+            app:layout_cellsHeight="1"
+            app:layout_cellsWidth="1"
+            app:layout_left="1"
+            app:layout_top="2"
+            />
+
+        <ImageButton
+            android:id="@+id/turn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_turn"
+            app:layout_cellsHeight="1"
+            app:layout_cellsWidth="1"
+            app:layout_left="2"
+            app:layout_top="2"
+            />
+
+        <ImageButton
+            android:id="@+id/done"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_done"
+            app:layout_cellsHeight="1"
+            app:layout_cellsWidth="1"
+            app:layout_left="4"
+            app:layout_top="4"
+            />
+
+        <Button
+            android:id="@+id/reset"
+            style="@style/AppTheme.Button.Orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"
+            android:theme="@style/AppTheme.Button.Orange"
+            app:layout_cellsHeight="1"
+            app:layout_cellsWidth="2"
+            app:layout_left="0"
+            app:layout_top="0"
+            />
+
+        <Button
+            android:id="@+id/start"
+            style="@style/AppTheme.Button.Green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start"
+            android:theme="@style/AppTheme.Button.Green"
+            app:layout_cellsHeight="1"
+            app:layout_cellsWidth="2"
+            app:layout_left="3"
+            app:layout_top="0"
+            />
+
+        <Button
+            android:id="@+id/ship1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="1"
+            app:layout_cellsHeight="1"
+            app:layout_cellsWidth="1"
+            app:layout_left="0"
+            app:layout_top="4"
+            />
+
+        <Button
+            android:id="@+id/ship2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="2"
+            app:layout_cellsHeight="1"
+            app:layout_cellsWidth="1"
+            app:layout_left="1"
+            app:layout_top="4"
+            />
+
+        <Button
+            android:id="@+id/ship3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="3"
+            app:layout_cellsHeight="1"
+            app:layout_cellsWidth="1"
+            app:layout_left="2"
+            app:layout_top="4"
+            />
+
+        <Button
+            android:id="@+id/ship4"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="4"
+            app:layout_cellsHeight="1"
+            app:layout_cellsWidth="1"
+            app:layout_left="3"
+            app:layout_top="4"
+            />
+
+    </com.sea_battle.view.CellLayout>
+
+</RelativeLayout>
